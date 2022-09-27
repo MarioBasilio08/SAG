@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sistemadeanlisisdegrafos">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icono"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icono"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Nombre_Fichero"
+            android:theme="@style/AppTheme.TemaPopup2"
+        />
+
+        <activity android:name=".floyd"
+            android:label="Floyd"/>
+        <activity android:name=".divide_y_venceras"
+            android:label="Divide y venceras"/>
+        <activity android:name=".grafos" />
+        <activity
+            android:name=".informacion"
+            android:label="@string/activity_informacion" />
+        <activity
+            android:name=".prim"
+            android:label="@string/activity_prim" />
+        <activity
+            android:name=".dijkstra"
+            android:label="@string/activity_dijkstra" />
+        <activity
+            android:name=".kruskal"
+            android:label="@string/activity_kruskal" />
+        <activity
+            android:name=".euleriana_conexa"
+            android:label="@string/activity_euleriana_conexa" />
+        <activity
+            android:name=".definicion_de_grafos"
+            android:label="@string/activity_definicion_de_grafo" />
+        <activity
+            android:name=".Pantalla_de_carga"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".inicio" />
+        <activity
+            android:name=".Info"
+            android:label="@string/activity_info"
+            android:theme="@style/AppTheme.TemaPopup" />
+    </application>
+
+</manifest>

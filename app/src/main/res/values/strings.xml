@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Sistema de análisis de grafos</string>
+    <string name="activity_definicion_de_grafo">Definición de grafo</string>
+    <string name="activity_euleriana_conexa">Euleriana conexa</string>
+    <string name="activity_kruskal">Kruskal</string>
+    <string name="activity_dijkstra">Dijkstra</string>
+    <string name="activity_prim">Prim</string>
+    <string name="activity_informacion">Información</string>
+    <string name="activity_info">Acerca de ...</string>
+
+    <string name="diccionario"><b>DICCIONARIO\n</b>
+\nDEFINICIÓN DE GRAFO.\n
+Grafo es una abstracción matemática que designaremos por G=(V,A )donde V es un conjunto de puntos V subíndice i, V diferente de vacío y A es un conjunto de líneas que unen dos puntos de V; A puede ser vacío , llamado conjunto de las aristas que están relacionados mediante la aplicación T.
+\n\nGRAFOS DIRIGIDOS.\n
+Grafo dirigido es aquel grafo en el cual la relación existente entre los elementos considera su dirección.
+\n\nARCO\n
+ Relación que indica dirección, entre un punto y otro puede haber más de un arco.
+\n\nCAMINO\n
+Es una ruta que se debe seguir para llegar de un punto a otro. Lo representaremos por Y (V subíndice i, V subíndice j ). En un grafo entre un punto y otro puede haber más de un camino.
+\n\nCAMINO ELEMENTAL\n
+Es aquel camino que nunca pasa más de una vez por un mismo punto.
+\n\nCAMINO COMPUESTO\n
+Es aquel camino que utiliza más de una vez un mismo punto.
+\n\nCIRCUITO\n
+Es aquel camino que vuelve a su punto de origen.
+\nBUCLE\n
+Es la conexión de un vértice consigo mismo.
+\n\nCIRCUITO ELEMENTAL\n
+ Es un camino elemental que vuelve a su punto de partida.
+\n\nCIRCUITO COMPUESTO\n
+Es aquel camino compuesto que vuelve a su punto de partida.
+\n\nCAMINO HAMILTONIANO\n
+Es el camino elemental que pasa por todos los vértices del grafo.
+\n\nCIRCUITO HAMILTONIANO\n
+Es un camino que vuelve a su punto de partida pasando por todos los vértices del grafo.
+\n\nTIPOS DE RELACIONES EN UN GRAFO\n
+Recordemos que en un grafo no consideramos las direcciones, por lo tanto tenemos:
+\n\nARISTA: Se obtiene de un arco si omitimos su dirección.\n
+\nCADENA: Se obtiene de un camino al omitir su dirección.\n
+\nCICLO: Este lo obtenemos de un circuito, también omitiendo su dirección, es decir, es una cadena cerrada.\n
+\nOBSERVACIÓN\n
+ \n• Todo punto del ciclo puede ser punto de partida\n
+ \n• Todo punto de partida es un punto de llegada.\n
+\n\nTIPOS DE GRAFOS\n
+Es bastante común distinguir entre tres tipos de grafos: los grafos, los multígrafos y los pseudografos.
+\n\nMULTÍGRAFO: Es aquel grafo en donde dos vértices se pueden conectar por más de una arista.\n
+\nPSEUDOGRAFO: Es aquel multígrafo en donde al menos exista un bucle (un vértice conectado con si mismo).\n
+\nGRAFOS PLANOS: Un grafo se dice que es plano si y sólo si existe una representación plana del mismo, de forma que las curvas que representan los arcos se cortan sólo en los puntos que representan a los vértices.\n
+\nSUBGRAFOS: Un grafo es una estructura algebraica y, como tal, tiene interés el estudio de sus subestructuras propias: los subgrafos. Un subgrafo es una parte de un grafo que por sí mismo es un grafo.\n
+
+    </string>
+
+    <string name="eulerianaconexa">
+        <b>EULERIANA CONEXA\n</b>
+        \nCONEXIDAD:\n
+ Sea G = ( V, A) un grafo, G es conexo si y solo si para todo par de vértice u y v de G existe un camino en G que conecta u y v.\n
+\nGRAFOS EULERIANOS:\n
+\n1.	Un camino simple que contenga a todos los arcos de un grafo G se dice que es euleriano.\n
+\n2.	Un grafo es euleriano si tiene un camino euleriano cerrado.\n
+\n\nTeorema de Euler\n
+\nSea G = (V, A )un grafo con A distinto de vacío es un grafo euleriano y sin vértices aislados si y solo si es conexo y todo sus vértices tienen grado par.\n
+
+    </string>
+
+    <string name="prim">
+         <b>ALGORITMO DE PRIM\n\n</b>
+El algoritmo de Prim, dado un grafo conexo, no dirigido y ponderado, encuentra un árbol de
+expansión mínima. Es decir, es capaz de encontrar un subconjunto de las aristas que
+formen un árbol que incluya todos los vértices del grafo inicial, donde el peso total de las
+aristas del árbol es el mínimo posible.
+\nFuncionamiento\n
+\n• Se marca un vértice cualquiera. Será el vértice de partida.\n
+\n• Se selecciona la arista de menor peso incidente en el vértice seleccionado
+anteriormente y se selecciona el otro vértice en el que incide dicha arista.\n
+\n• Repetir el paso 2 siempre que la arista elegida enlace un vértice seleccionado y
+otro que no lo esté. Es decir, siempre que la arista elegida no cree ningún ciclo.\n
+\n• El árbol de expansión mínima será encontrado cuando hayan sido seleccionados
+todos los vértices del grafo.
+
+    </string>
+
+    <string name="kruskal">
+        <b>ALGORITMO DE KRUSKAL\n\n</b>
+El algoritmo de Kruskal, dado un grafo conexo, no dirigido y ponderado, encuentra un
+árbol de expansión mínima. Es decir, es capaz de encontrar un subconjunto de las aristas
+que formen un árbol que incluya todos los vértices del grafo inicial, donde el peso total de
+las aristas del árbol es el mínimo posible.
+\n\nFuncionamiento del algoritmo de Kruskal\n\n
+\n• Se selecciona, de entre todas las aristas restantes, la de menor peso siempre que
+no cree ningún ciclo.\n
+\n• Se repite el paso 1 hasta que se hayan seleccionado |V| - 1 aristas.\n
+\nSiendo V el número de vértices.\n
+
+    </string>
+
+    <string name="dijkstra">
+        <b>ALGORITMO DE DIJKSTRA\n</b>
+\nEl Algortimo de Dijkstra, también denominado Algoritmo de caminos mínimos, es un modelo que se clasifica dentro de los algoritmos de búsqueda. Su objetivo, es determinar la ruta más corta, desde el nodo origen, hasta cualquier nodo de la red. Su metodología se basa en iteraciones, de manera tal que, en la práctica, su desarrollo se dificulta a medida que el tamaño de la red aumenta, dejándolo en clara desventaja, frente a métodos de optimización basados en programación matemática.\n
+\nAquí está una descripción del algoritmo:\n
+\n1. Marca el nodo inicial que elegiste con una distancia actual de 0 y el resto con infinito.\n
+\n2. Establece el nodo no visitado con la menor distancia actual como el nodo actual A.\n
+\n3. Para cada vecino V de tu nodo actual A: suma la distancia actual de A con el peso de la arista que conecta a A con V. Si el resultado es menor que la distancia actual de V, establécelo como la nueva distancia actual de V.\n
+\n4. Marca el nodo actual A como visitado.\n
+\n5. Si hay nodos no visitados, ve al paso 2.\n
+
+    </string>
+
+    <string name="definicion_de_grafo">
+        <b>DEFINICIÓN DE GRAFO\n</b>
+\nEl algoritmo para definición de grafos nos sirve para identificar si a partir de una sucesión de grados se puede lograr construir un grafo.\n
+\nLa sucesión es del tipo {A, B, C, D, H,...,Z}  donde la cantidad de términos es la cantidad de vértices que contendrá l grafo y valor representa el grado un vértice del posible grafo.\n
+\nDescripción del algoritmo:\n
+\n 1. Comenzamos por ordenar la sucesión de forma descendente.\n
+\n 2. Tomamos el valor de dicho vértice y le restamos 1 a la cantidad de términos siguientes que dicho valor nos indique.\n
+\n 3. Eliminamos el primer término que utilizamos en el paso anterior y volvemos a ordenar de forma descendente.\n
+\n 4. Verificamos si todos los términos que nos quedan son 0 terminamos el proceso y determinamos que el grafo es graficable, si hay números distintos de cero regresamos al paso 2 pero si hay un número menor a 0 entonces el grafo no es graficable.\n
+\nEl algoritmo es derivado del siguiente teorema\n
+\nUna sucesión {A, B, C, D, H,..., Z}  es graficable si y solo si {B-1, C-1, D-1, H-1, …, M-1, N,..., Z} es graficable.\n
+
+    </string>
+
+    <string name="floyd">
+        <b>FLOYD\n</b>
+        \nEl algoritmo de Floyd-Warshall es un algoritmo de análisis sobre grafos para encontrar el camino mínimo en grafos dirigidos ponderados. El algoritmo encuentra el camino entre todos los pares de vértices en una única ejecución.
+\nEl algoritmo de Floyd trabaja con grafos ponderados, es decir, el valor de la “flecha” que representamos en la matriz puede ser cualquier número real o infinito. Infinito marca que no existe unión entre los nodos. Esta vez, el resultado será una matriz donde estarán representadas las distancias mínimas entre nodos
+\nLos pasos a dar en la aplicación del algoritmo de Floyd son los siguientes:
+\n* Formar las matrices iniciales C y D, donde C es la matriz de adyacencia, y D es una matriz del mismo tamaño cargada con valores iniciales Dij = i.
+\n* Se toma k=1.
+\n* Se selecciona la fila y la columna k de la matriz C y entonces, para i y j, con i≠k, j≠k e  i≠j, hacemos:
+Si (C[ i ][ k ] + C[ k ][ j ]) es menor que C[ i ][ j ] → D[ i ][ j ] = D[ k ][ j ] y C[ i ][ j ] = C[ i ][ k ] + C[ k ][ j ]
+En caso contrario, dejamos las matrices como están.
+\n* Si k ≤ n, aumentamos k en una unidad y repetimos el paso anterior, en caso contrario páramos las interacciones.
+\n* La matriz final C contiene los costes óptimos para ir de un vértice a otro, mientras que la matriz D contiene los penúltimos vértices de los caminos óptimos que unen dos vértices, lo cual permite reconstruir cualquier camino óptimo para ir de un vértice a otro.
+
+
+    </string>
+
+    <string name="divideyvenceras">
+        <b>DIVIDE Y VENCERAS\n</b>
+        \nDescripcion del algoritmo\n
+\n El algoritmo trabaja de la siguiente forma:
+
+\nElegir un elemento del conjunto de elementos a ordenar, al que llamaremos pivote.
+Resituar los demas elementos de la lista a cada lado del pivote, de manera que a un lado queden todos los menores que el, y al otro los mayores. Los elementos iguales al pivote pueden ser colocados tanto a su derecha como a su izquierda, dependiendo de la implementacion deseada. En este momento, el pivote ocupa exactamente el lugar que le correspondera en la lista ordenada.
+La lista queda separada en dos sublistas, una formada por los elementos a la izquierda del pivote, y otra por los elementos a su derecha.
+Repetir este proceso de forma recursiva para cada sublista mientras estas contengan mas de un elemento. Una vez terminado este proceso todos los elementos estaran ordenados.
+\nComo se puede suponer, la eficiencia del algoritmo depende de la posicion en la que termine el pivote elegido. \n
+
+\nEn el mejor caso, el pivote termina en el centro de la lista, dividiendola en dos sublistas de igual tamaño. En este caso, el orden de complejidad del algoritmo es O(n·log n).
+En el peor caso, el pivote termina en un extremo de la lista. El orden de complejidad del algoritmo es entonces de O(n²). El peor caso dependera de la implementacion del algoritmo, aunque habitualmente ocurre en listas que se encuentran ordenadas, o casi ordenadas. Pero principalmente depende del pivote, si por ejemplo el algoritmo implementado toma como pivote siempre el primer elemento del array, y el array que le pasamos está ordenado, siempre va a generar a su izquierda un array vacio, lo que es ineficiente.
+En el caso promedio, el orden es O(n·log n).\n
+\nNo es extraño, pues, que la mayoria de optimizaciones que se aplican al algoritmo se centren en la eleccion del pivote.\n
+
+\nDemostracion de un caso particular\n
+\nSupongamos que el numero de elementos a ordenar es una potencia de dos, es decir, {\displaystyle n=2^{k}}{\displaystyle n=2^{k}} para algun natural {\displaystyle k}k. Inmediatamente {\displaystyle k=log_{2}(n)}{\displaystyle k=log_{2}(n)}, donde k es el numero de divisiones que realizara el algoritmo.
+
+\nEn la primera fase del algoritmo habra n comparaciones. En la segunda fase el algoritmo instanciara dos sublistas de tamaño aproximadamente n/2. El numero total de comparaciones de estas dos sublistas es: 2(n/2) = n. En la tercera fase el algoritmo procesara 4 sublistas mas, por tanto el numero total de comparaciones en esta fase es 4(n/4) = n.
+
+\nEn conclusion, el numero total de comparaciones que hace el algoritmo es:
+
+\n{\displaystyle n+n+n+.....+n=kn}{\displaystyle n+n+n+.....+n=kn}, donde {\displaystyle k=log_{2}(n)}{\displaystyle k=log_{2}(n)}, por tanto el Orden de Complejidad del algoritmo en el mejor de los casos es {\displaystyle O(n.log_{2}n)}{\displaystyle O(n.log_{2}n)}.
+
+    </string>
+</resources>
